@@ -6,6 +6,8 @@
 }
 
 @import "Partials/colors";
+@import "Partials/header";
+@import "Partials/layout";
 
 body{
     background-color: $primary-normal;
@@ -14,6 +16,7 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
+    padding: 16px;
 }
 
 button{
