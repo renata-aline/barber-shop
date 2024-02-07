@@ -1,0 +1,60 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+
+    .footer-icons{
+        display: flex;
+        gap: 8px;
+        color: $white-normal;
+    }
+    p{
+        padding: 18px;
+    }
+}
+
+.btn-whatsapp{
+    position:fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+    img{
+        max-width: 54px;
+        transition: transform 0.4s;
+    }
+
+    
+
+    img:hover{
+        transform: scale(1.2);
+    }
+
+   
+}
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility:visible;
+    opacity: 1;
+}
+
+
